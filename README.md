@@ -34,10 +34,13 @@ echo $page->myField;
 echo $page->myOtherField;
 ```
 
-The unprefixed field names are now also accessible via selectors:
+The unprefixed field names are now also accessible via selectors, but only for already fetched data, since the field is not really in the database:
 
 ```PHP
+// not
 $pages->find('myField=something');
+// but
+$pages->find('template.name=basic-page')->filter('myField=something');
 ```
 
 #### Use case
