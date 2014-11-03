@@ -16,7 +16,7 @@ class FieldnameUnprefixer extends WireData implements Module {
 		return array(
 			'title' => 'Field Name Unprefixer',
 			'summary' => 'Makes it possible to access prefixed field names without the prefix.',
-			'version' => '0.1.0',
+			'version' => '0.1.1',
 			'author' => 'owzim',
 			'icon' => 'arrow-circle-left',
 			'requires' => 'ProcessWire>=2.5.0, PHP>=5.4.0',
