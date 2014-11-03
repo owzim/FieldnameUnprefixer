@@ -38,6 +38,7 @@ class FieldnameUnprefixer extends WireData implements Module {
 			}
 
 			$template = $this->templates->get($templateName);
+			if (!$template) continue;
 			$fields = $template->fields;
 
 			foreach ($prefixes as $prefix) {
